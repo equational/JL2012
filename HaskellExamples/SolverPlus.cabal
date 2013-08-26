@@ -1,0 +1,23 @@
+name: SolverPlus
+version: 0.0.1
+cabal-version: >=1.2
+build-type: Simple
+license: AllRightsReserved
+license-file: ""
+synopsis: Simple solver
+description: .
+data-files:
+data-dir: /Users/james/Documents/haskell/Packages/src/
+
+executable sol1
+    build-depends: MissingH -any, base -any, comonad -any,
+                   containers -any, indents -any, mtl -any, parsec -any, random -any
+    main-is: Main.hs
+    buildable: True
+    extensions: OverlappingInstances MultiParamTypeClasses
+                FunctionalDependencies RankNTypes ExistentialQuantification
+                FlexibleContexts FlexibleInstances KindSignatures
+                TypeSynonymInstances GADTs
+    hs-source-dirs: src
+    other-modules:
+
